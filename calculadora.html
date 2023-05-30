@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="code.js"></script>
+</head>
+<body onload="">
+   <label for="entrada" id="pantalla">Escriba en la casilla</label> <br>
+   <input type="text" id="entrada" oninput="reflejarTexto()" onkeypress="validarNumeros(event)">
+   <div>
+    <button onclick="borrarLabel()">AC</button>
+    <button onclick="escribirEnLabel('()')">()</button>
+    <button onclick="escribirEnLabel('%')">%</button>
+    <button onclick="escribirEnLabel('/')">/</button>
+  </div>
+  <div>
+    <button onclick="escribirEnLabel('7')">7</button>
+    <button onclick="escribirEnLabel('8')">8</button>
+    <button onclick="escribirEnLabel('9')">9</button>
+    <button onclick="escribirEnLabel('*')">*</button>
+  </div>
+  <div>
+    <button onclick="escribirEnLabel('4')">4</button>
+    <button onclick="escribirEnLabel('5')">5</button>
+    <button onclick="escribirEnLabel('6')">6</button>
+    <button onclick="escribirEnLabel('-')">-</button>
+  </div>
+  <div>
+    <button onclick="escribirEnLabel('1')">1</button>
+    <button onclick="escribirEnLabel('2')">2</button>
+    <button onclick="escribirEnLabel('3')">3</button>
+    <button onclick="escribirEnLabel('+')">+</button>
+  </div>
+  <div>
+    <button onclick="escribirEnLabel('0')">0</button>
+    <button onclick="escribirEnLabel('.')">.</button>
+    <button onclick="borrarCaracter()">del</button>
+    <button onclick="escribirEnLabel('=')">=</button>
+  </div>
+</body>
+</html>
