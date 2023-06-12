@@ -49,3 +49,7 @@ function borrarLabel(){
   contador=0;//toco por que si no se hace al volver a escribir no se borra "Escriba ..."
   //revisar la funcion escribirEnLabel() para entender porque.
 }
+function resultado(){
+  var resultado=document.getElementById("pantalla").textContent;
+  document.getElementById("pantalla").textContent=eval(resultado);
+}
