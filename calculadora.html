@@ -12,7 +12,8 @@
    <input type="text" id="entrada" oninput="reflejarTexto()" onkeypress="validarNumeros(event)">
    <div>
     <button onclick="borrarLabel()">AC</button>
-    <button onclick="escribirEnLabel('()')">()</button>
+    <button onclick="escribirEnLabel(value)" value="(">(</button>
+    <button onclick="escribirEnLabel(value)" value=")">)</button>
     <button onclick="escribirEnLabel('%')">%</button>
     <button onclick="escribirEnLabel('/')">/</button>
   </div>
